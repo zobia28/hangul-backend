@@ -1,0 +1,25 @@
+{
+  "name": "hangulpath-backend",
+  "version": "1.0.0",
+  "description": "Backend API for HangulPath — a Korean learning app (auth, progress, practice, TOPIK, leaderboard).",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "migrate": "node src/migrate.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "pg": "^8.12.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "dotenv": "^16.4.5",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
